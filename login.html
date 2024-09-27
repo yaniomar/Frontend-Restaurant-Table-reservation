@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup - Demo</title>
+    <!-- Link to the main stylesheet for styling the page -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts link for Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Container for the login form -->
+    <div class="login-container" id="loginContainer">
+        <h1>Welcome To Aquazan</h1>
+        <!-- Form for user login -->
+        <form id="loginForm">
+            <!-- Input group for username -->
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <!-- Input group for password -->
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <!-- Submit button for the login form -->
+            <button type="submit" class="login-button">Sign in</button>
+        </form>
+        <!-- Link to switch to the signup form for new users -->
+        <p>Don't have an account? <a href="#" id="showSignupForm">Create an account</a></p>
+    </div>
+
+    <!-- Container for the signup form, hidden by default -->
+    <div class="signup-container" id="signupContainer" style="display:none;">
+        <h2>Create Account</h2>
+        <!-- Form for new user registration -->
+        <form id="signupForm">
+            <!-- Input group for choosing a new username -->
+            <div class="input-group">
+                <input type="text" id="newUsername" placeholder="Choose a username" required>
+            </div>
+            <!-- Input group for creating a new password -->
+            <div class="input-group">
+                <input type="password" id="newPassword" placeholder="Create a password" required>
+            </div>
+            <!-- Submit button for the signup form -->
+            <button type="submit" class="signup-button">Sign Up</button>
+        </form>
+        <!-- Link to switch back to the login form for existing users -->
+        <p>Already have an account? <a href="#" id="showLoginForm">Sign in</a></p>
+    </div>
+
+    <!-- Script tag for the external JavaScript handling login and signup logic -->
+    <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquazan Restaurant</title>
+    <!-- Link to external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header section containing the main heading -->
+    <header>
+        <h1>Welcome to Aquazan Restaurant</h1>
+    </header>
+
+    <!-- Navigation bar for interactive elements like adding new tables -->
+    <nav id="navbar">
+        <!-- Button to add a new table to the restaurant's system -->
+        <button id="addTableBtn" class="button">Add New Table</button>
+    </nav>
+
+    <!-- Main content area -->
+    <main id="main-content">
+        <!-- Section for displaying tables in the restaurant -->
+        <section id="tables-section" class="tables-container">
+            <h2>Tables</h2>
+            <!-- Container for dynamically added tables -->
+            <div id="tables-list" class="tables-list"></div>
+        </section>
+
+        <!-- Sidebar for menu selection, hidden by default -->
+        <aside id="menuSelection" class="menu-selection" style="display: none;">
+            <!-- Buttons for different menu categories -->
+            <button class="menu-item-button">Food</button>
+            <button class="menu-item-button">Beverages</button>
+            <button class="menu-item-button">Argeela</button>
+            <!-- Button to close the menu selection sidebar -->
+            <button class="close-menu-button">Close Menu</button>
+        </aside>
+    </main>
+
+    <!-- Footer section with copyright information -->
+    <footer>
+        <p>&copy; 2024 Aquazan Restaurant. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to external JavaScript file for handling table and menu interactions -->
+    <script src="tables.js"></script>
+</body>
+
+</html>
